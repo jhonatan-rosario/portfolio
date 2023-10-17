@@ -1,0 +1,117 @@
+.contact > h1 {
+    margin-bottom: 2rem;
+}
+
+.contact .contact-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.contact .contact-image {
+    display: none;
+    width: 100%;
+    max-width: 200px;
+}
+
+.contact .contact-image > img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-container > form {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+}
+
+.contact .input-filled {
+    position: relative;
+    background-color: var(--background-lighter);
+    border-radius: 5px;
+}
+
+.contact .input-filled > input, 
+.contact .input-filled > textarea {
+    height: 5.5rem;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    background-color: transparent;
+    border-bottom: 2.5px solid var(--text-muted);
+    border-radius: 5px;
+    cursor: text;
+    resize: none;
+    color: white;
+    caret-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .contact .input-filled > input:hover, 
+.contact .input-filled > textarea:hover {
+    background-color: #383838;
+} */
+
+.contact .input-filled > input:focus, 
+.contact .input-filled > textarea:focus {
+    border-bottom: 2.5px solid var(--primary);
+}
+
+.contact .input-filled > input:focus ~ label,
+.contact .input-filled > textarea:focus ~ label,
+.contact .input-filled > input:not(:placeholder-shown) ~ label,
+.contact .input-filled > textarea:not(:placeholder-shown) ~ label {
+    transform: translateY(-15px);
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.textarea-filled {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: end;
+    height: 14rem;
+}
+
+.contact .input-filled > textarea {
+    height: 12rem;
+    padding-bottom: 10px;
+}
+
+.contact .input-filled > textarea::-webkit-scrollbar {
+    height: 5rem;
+    width: 7px;
+    background-color: var(--text-muted); 
+    border-radius: 5px;
+}
+
+.contact .input-filled > textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary); 
+}
+
+.contact .input-filled > label {
+    position: absolute;
+    font-size: 1.6rem;
+    color: var(--text-muted-input);
+    top: 20px;
+    left: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact .input-filled > textarea ~ label {
+    top: 20px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .container {
+        padding: 3rem 10rem;
+    }
+}
