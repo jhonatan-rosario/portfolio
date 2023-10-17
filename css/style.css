@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Oswvald', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--background-base);
+}
+
+.container {
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.title-1 {
+    color: var(--text-primary);
+    font-size: var(--title-1);
+    font-weight: 600;
+}
+
+.title-2 {
+    color: var(--text-primary);
+    font-size: var(--title-2);
+    font-weight: 600;
+}
+
+.title-3 {
+    color: var(--text-primary);
+    font-size: var(--title-3);
+    font-weight: 600;
+}
+
+.paragraph-1 {
+    color: var(--text-primary);
+    font-size: var(--paragraph-1);
+    font-weight: 300;
+}
+
+.paragraph-2 {
+    color: var(--text-primary);
+    font-size: var(--paragraph-2);
+    font-weight: 300;
+}
+
+.paragraph-3 {
+    color: var(--text-primary);
+    font-size: var(--paragraph-3);
+    font-weight: 300;
+}
+
+.link {
+    color: var(--text-secondary);
+    font-size: var(--paragraph-3);
+    font-weight: 300;
+}
+
+.primary-button {
+    background: var(--primary);
+    color: var(--text-primary);
+    padding: 1.2rem;
+    font-size: var(--paragraph-2);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    background: var(--primary-hover);
+}
+
+.secondary-button:hover {
+    background: var(--background-lighter);
+}
+
+.secondary-button {
+    background: transparent;
+    color: var(--text-secondary);
+    padding: 1.2rem;
+    font-size: var(--paragraph-2);
+    border: solid 0.15rem var(--primary);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media (max-width: 345px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .container {
+        padding: 3rem 10rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 68%;
+    }
+    .container {
+        padding: 3rem 15rem;
+    }
+}

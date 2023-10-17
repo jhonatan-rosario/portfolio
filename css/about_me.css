@@ -1,0 +1,11 @@
+.about-me {
+    background: var(--background-lighter);
+}
+
+.about-me > h1 {
+    margin-bottom: 3rem;
+}
+
+.about-me > p {
+    text-align: justify;
+}
