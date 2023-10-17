@@ -1,0 +1,51 @@
+.projects {
+    background: var(--background-base);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.projects > h1 {
+    margin-bottom: 3rem;
+}
+
+.projects .project-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects .project {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    width: 90%;
+}
+
+.project img {
+    height: auto;
+    width: 100%;
+    /* max-width: 500px; */
+    object-fit: cover;
+    align-self: center;
+}
+
+.project h1 {
+    margin-top: 2rem;
+}
+
+.project p {
+    margin-top: 0.5rem;
+}
+
+.project .container-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+}
